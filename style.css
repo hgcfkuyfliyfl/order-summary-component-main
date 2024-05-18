@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  background-color: white;
+  text-align: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  /* Added padding to container */
+}
+
+.header-image {
+  height: 9.8rem; /* Reduced height */
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px; /* Reduced font size */
+  margin-top: 1rem; /* Reduced margin */
+}
+
+p {
+  font-size: 14px; /* Reduced font size */
+  color: hsl(224, 23%, 55%);
+  width: 80%;
+}
+
+.payment-plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: hsl(225, 100%, 98%);
+  width: 90%;
+  padding: 0.5rem; /* Reduced padding */
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  gap: 1rem;
+}
+
+.payment-plan > .annual_plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.annual_plan > * {
+  font-size: 14px; /* Reduced font size */
+  margin-top: 3px; /* Reduced margin */
+}
+
+.payment-plan > .change {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.payment-plan > .change a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  font-size: 14px; /* Reduced font size */
+}
+
+.payment-plan > .change a:hover {
+  color: hsl(245, 75%, 52%, 0.5);
+}
+
+button {
+  width: 90%;
+  height: 2rem; /* Reduced height */
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: hsl(245, 75%, 52%, 0.5);
+}
+
+.last_paragraph {
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.last_paragraph p:hover {
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
